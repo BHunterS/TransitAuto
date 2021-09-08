@@ -1,0 +1,86 @@
+/* Insurance */
+
+.insurance__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insurance__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 4rem;
+}
+
+.insurance__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  margin-right: 60px;
+}
+
+.insurance__slider {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.insurance__slider img {
+  width: 100%;
+}
+
+.insurance__title {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.insurance__text {
+  line-height: 1.65;
+}
+
+.insurance__buttons .icon-chevron-right,
+.insurance__buttons .icon-chevron-left {
+  color: #fff;
+}
+
+.insurance__dots {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+}
+
+@media (max-width: 1230px) {
+  .insurance__info {
+    margin-right: calc(30px + 30 * ((100vw - 320px) / 910));
+  }
+}
+
+@media (max-width: 991px) {
+  .insurance__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .insurance__info {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .insurance__text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,68 @@
+/* Application */
+
+.application {
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+
+.application__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.application__title {
+  width: 100%;
+  margin-bottom: 70px;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.application__form {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  max-width: 540px;
+  padding-top: 60px;
+  padding-bottom: 75px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #fff;
+}
+
+.application__form .form__input {
+  width: 100%;
+}
+
+@media (max-width: 1230px) {
+  .application__title {
+    margin-bottom: calc(40px + 30 * ((100vw - 320px) / 910));
+  }
+
+  .application__form {
+    padding-top: calc(30px + 30 * ((100vw - 320px) / 910));
+  }
+
+  .application__form {
+    padding-bottom: calc(30px + 45 * ((100vw - 320px) / 910));
+  }
+
+  .application__form {
+    padding-left: calc(10px + 70 * ((100vw - 320px) / 910));
+  }
+
+  .application__form {
+    padding-right: calc(10px + 70 * ((100vw - 320px) / 910));
+  }
+}
